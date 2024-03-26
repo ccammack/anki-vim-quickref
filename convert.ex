@@ -194,8 +194,8 @@ defmodule Convert do
 
   defp clean_card_field(field) do
       field = Regex.replace(~r/\s+/, field, " ")
-      field = Regex.replace(~r/\</, field, "[")
-      field = Regex.replace(~r/\>/, field, "]")
+      field = Regex.replace(~r/\</, field, "&lt;")
+      field = Regex.replace(~r/\>/, field, "&gt;")
       String.trim(field)
   end
 

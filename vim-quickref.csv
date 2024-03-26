@@ -12,11 +12,11 @@
 #
 # *quickref.txt*  For Vim version 9.1.  Last change: 2024 Mar 03
 #
-(Left-right motions)<br>N h  	(Left-right motions)<br>  left (also: CTRL-H, [BS], or [Left] key)
-(Left-right motions)<br>N l  	(Left-right motions)<br>  right (also: [Space] or [Right] key)
-(Left-right motions)<br>0  	(Left-right motions)<br>  to first character in the line (also: [Home] key)
+(Left-right motions)<br>N h  	(Left-right motions)<br>  left (also: CTRL-H, &lt;BS&gt;, or &lt;Left&gt; key)
+(Left-right motions)<br>N l  	(Left-right motions)<br>  right (also: &lt;Space&gt; or &lt;Right&gt; key)
+(Left-right motions)<br>0  	(Left-right motions)<br>  to first character in the line (also: &lt;Home&gt; key)
 (Left-right motions)<br>^  	(Left-right motions)<br>  to first non-blank character in the line
-(Left-right motions)<br>N $  	(Left-right motions)<br>  to the last character in the line (N-1 lines lower) (also: [End] key)
+(Left-right motions)<br>N $  	(Left-right motions)<br>  to the last character in the line (N-1 lines lower) (also: &lt;End&gt; key)
 (Left-right motions)<br>g0  	(Left-right motions)<br>  to first character in screen line (differs from "0" when lines wrap)
 (Left-right motions)<br>g^  	(Left-right motions)<br>  to first non-blank character in screen line (differs from "^" when lines wrap)
 (Left-right motions)<br>N g$  	(Left-right motions)<br>  to last character in screen line (differs from "$" when lines wrap)
@@ -29,10 +29,10 @@
 (Left-right motions)<br>N T{char}  	(Left-right motions)<br>  till before the Nth occurrence of {char} to the left
 (Left-right motions)<br>N ;  	(Left-right motions)<br>  repeat the last "f", "F", "t", or "T" N times
 (Left-right motions)<br>N ,  	(Left-right motions)<br>  repeat the last "f", "F", "t", or "T" N times in opposite direction
-(Up-down motions)<br>N k  	(Up-down motions)<br>  up N lines (also: CTRL-P and [Up])
-(Up-down motions)<br>N j  	(Up-down motions)<br>  down N lines (also: CTRL-J, CTRL-N, [NL], and [Down])
+(Up-down motions)<br>N k  	(Up-down motions)<br>  up N lines (also: CTRL-P and &lt;Up&gt;)
+(Up-down motions)<br>N j  	(Up-down motions)<br>  down N lines (also: CTRL-J, CTRL-N, &lt;NL&gt;, and &lt;Down&gt;)
 (Up-down motions)<br>N -  	(Up-down motions)<br>  up N lines, on the first non-blank character
-(Up-down motions)<br>N +  	(Up-down motions)<br>  down N lines, on the first non-blank character (also: CTRL-M and [CR])
+(Up-down motions)<br>N +  	(Up-down motions)<br>  down N lines, on the first non-blank character (also: CTRL-M and &lt;CR&gt;)
 (Up-down motions)<br>N _  	(Up-down motions)<br>  down N-1 lines, on the first non-blank character
 (Up-down motions)<br>N G  	(Up-down motions)<br>  goto line N (default: last line), on the first non-blank character
 (Up-down motions)<br>N gg  	(Up-down motions)<br>  goto line N (default: first line), on the first non-blank character
@@ -67,10 +67,10 @@
 (Text object motions)<br>N ]#  	(Text object motions)<br>  N times forward to unclosed "#else" or "#endif"
 (Text object motions)<br>N [*  	(Text object motions)<br>  N times back to start of comment "/*"
 (Text object motions)<br>N ]*  	(Text object motions)<br>  N times forward to end of comment "*/"
-(Pattern searches)<br>N /{pattern}[/[offset]][CR]  	(Pattern searches)<br>  search forward for the Nth occurrence of {pattern}
-(Pattern searches)<br>N ?{pattern}[?[offset]][CR]  	(Pattern searches)<br>  search backward for the Nth occurrence of {pattern}
-(Pattern searches)<br>N /[CR]  	(Pattern searches)<br>  repeat last search, in the forward direction
-(Pattern searches)<br>N ?[CR]  	(Pattern searches)<br>  repeat last search, in the backward direction
+(Pattern searches)<br>N /{pattern}[/[offset]]&lt;CR&gt;  	(Pattern searches)<br>  search forward for the Nth occurrence of {pattern}
+(Pattern searches)<br>N ?{pattern}[?[offset]]&lt;CR&gt;  	(Pattern searches)<br>  search backward for the Nth occurrence of {pattern}
+(Pattern searches)<br>N /&lt;CR&gt;  	(Pattern searches)<br>  repeat last search, in the forward direction
+(Pattern searches)<br>N ?&lt;CR&gt;  	(Pattern searches)<br>  repeat last search, in the backward direction
 (Pattern searches)<br>N n  	(Pattern searches)<br>  repeat last search
 (Pattern searches)<br>N N  	(Pattern searches)<br>  repeat last search, in opposite direction
 (Pattern searches)<br>N *  	(Pattern searches)<br>  search forward for the identifier under the cursor
@@ -87,10 +87,10 @@
 (Marks and motions)<br>`"  	(Marks and motions)<br>  go to the position when last editing this file
 (Marks and motions)<br>`[  	(Marks and motions)<br>  go to the start of the previously operated or put text
 (Marks and motions)<br>`]  	(Marks and motions)<br>  go to the end of the previously operated or put text
-(Marks and motions)<br>`[  	(Marks and motions)<br>  go to the start of the (previous) Visual area
-(Marks and motions)<br>`]  	(Marks and motions)<br>  go to the end of the (previous) Visual area
+(Marks and motions)<br>`&lt;  	(Marks and motions)<br>  go to the start of the (previous) Visual area
+(Marks and motions)<br>`&gt;  	(Marks and motions)<br>  go to the end of the (previous) Visual area
 (Marks and motions)<br>`.  	(Marks and motions)<br>  go to the position of the last change in this file
-(Marks and motions)<br>'{a-zA-Z0-9[]'"[].}  	(Marks and motions)<br>  same as `, but on the first non-blank in the line
+(Marks and motions)<br>'{a-zA-Z0-9[]'"&lt;&gt;.}  	(Marks and motions)<br>  same as `, but on the first non-blank in the line
 (Marks and motions)<br>:marks  	(Marks and motions)<br>  print the active marks
 (Marks and motions)<br>N CTRL-O  	(Marks and motions)<br>  go to Nth older position in jump list
 (Marks and motions)<br>N CTRL-I  	(Marks and motions)<br>  go to Nth newer position in jump list
@@ -126,7 +126,7 @@
 (Scrolling)<br>N CTRL-Y  	(Scrolling)<br>  window N lines upwards (default: 1)
 (Scrolling)<br>N CTRL-U  	(Scrolling)<br>  window N lines Upwards (default: 1/2 window)
 (Scrolling)<br>N CTRL-B  	(Scrolling)<br>  window N pages Backwards (upwards)
-(Scrolling)<br>z[CR] or zt  	(Scrolling)<br>  redraw, current line at top of window
+(Scrolling)<br>z&lt;CR&gt; or zt  	(Scrolling)<br>  redraw, current line at top of window
 (Scrolling)<br>z.  	(Scrolling)<br>  or zz redraw, current line at center of window
 (Scrolling)<br>z-  	(Scrolling)<br>  or zb redraw, current line at bottom of window
 (Scrolling)<br>N zh  	(Scrolling)<br>  scroll screen N characters to the right
@@ -135,7 +135,7 @@
 (Scrolling)<br>N zL  	(Scrolling)<br>  scroll screen half a screenwidth to the left
 (Inserting text)<br>N a  	(Inserting text)<br>  append text after the cursor (N times)
 (Inserting text)<br>N A  	(Inserting text)<br>  append text at the end of the line (N times)
-(Inserting text)<br>N i  	(Inserting text)<br>  insert text before the cursor (N times) (also: [Insert])
+(Inserting text)<br>N i  	(Inserting text)<br>  insert text before the cursor (N times) (also: &lt;Insert&gt;)
 (Inserting text)<br>N I  	(Inserting text)<br>  insert text before the first non-blank in the line (N times)
 (Inserting text)<br>N gI  	(Inserting text)<br>  insert text in column 1 (N times)
 (Inserting text)<br>N o  	(Inserting text)<br>  open a new line below the current line, append text (N times)
@@ -144,16 +144,16 @@
 (Inserting text)<br>:startr[eplace][!]  	(Inserting text)<br>  start Replace mode, at EOL when [!] used
 (Inserting text)<br>I  	(Inserting text)<br>  insert the same text in front of all the selected lines
 (Inserting text)<br>A  	(Inserting text)<br>  append the same text after all the selected lines
-(Insert mode keys)<br>[Esc]  	(Insert mode keys)<br>  end Insert mode, back to Normal mode
-(Insert mode keys)<br>CTRL-C  	(Insert mode keys)<br>  like [Esc], but do not use an abbreviation
+(Insert mode keys)<br>&lt;Esc&gt;  	(Insert mode keys)<br>  end Insert mode, back to Normal mode
+(Insert mode keys)<br>CTRL-C  	(Insert mode keys)<br>  like &lt;Esc&gt;, but do not use an abbreviation
 (Insert mode keys)<br>CTRL-O {command}  	(Insert mode keys)<br>  execute {command} and return to Insert mode
 (Insert mode keys)<br>cursor keys  	(Insert mode keys)<br>  move cursor left/right/up/down
 (Insert mode keys)<br>shift-left/right  	(Insert mode keys)<br>  one word left/right
 (Insert mode keys)<br>shift-up/down  	(Insert mode keys)<br>  one screenful backward/forward
-(Insert mode keys)<br>[End]  	(Insert mode keys)<br>  cursor after last character in the line
-(Insert mode keys)<br>[Home]  	(Insert mode keys)<br>  cursor to first character in the line
+(Insert mode keys)<br>&lt;End&gt;  	(Insert mode keys)<br>  cursor after last character in the line
+(Insert mode keys)<br>&lt;Home&gt;  	(Insert mode keys)<br>  cursor to first character in the line
 (Special keys in Insert mode)<br>CTRL-V {char}..  	(Special keys in Insert mode)<br>  insert character literally, or enter decimal byte value
-(Special keys in Insert mode)<br>[NL] or [CR] or CTRL-M or CTRL-J  	(Special keys in Insert mode)<br>  begin new line
+(Special keys in Insert mode)<br>&lt;NL&gt; or &lt;CR&gt; or CTRL-M or CTRL-J  	(Special keys in Insert mode)<br>  begin new line
 (Special keys in Insert mode)<br>CTRL-E  	(Special keys in Insert mode)<br>  insert the character from below the cursor
 (Special keys in Insert mode)<br>CTRL-Y  	(Special keys in Insert mode)<br>  insert the character from above the cursor
 (Special keys in Insert mode)<br>CTRL-A  	(Special keys in Insert mode)<br>  insert previously inserted text
@@ -162,8 +162,8 @@
 (Special keys in Insert mode)<br>CTRL-N  	(Special keys in Insert mode)<br>  insert next match of identifier before the cursor
 (Special keys in Insert mode)<br>CTRL-P  	(Special keys in Insert mode)<br>  insert previous match of identifier before the cursor
 (Special keys in Insert mode)<br>CTRL-X ...  	(Special keys in Insert mode)<br>  complete the word before the cursor in various ways
-(Special keys in Insert mode)<br>[BS] or CTRL-H  	(Special keys in Insert mode)<br>  delete the character before the cursor
-(Special keys in Insert mode)<br>[Del]  	(Special keys in Insert mode)<br>  delete the character under the cursor
+(Special keys in Insert mode)<br>&lt;BS&gt; or CTRL-H  	(Special keys in Insert mode)<br>  delete the character before the cursor
+(Special keys in Insert mode)<br>&lt;Del&gt;  	(Special keys in Insert mode)<br>  delete the character under the cursor
 (Special keys in Insert mode)<br>CTRL-W  	(Special keys in Insert mode)<br>  delete word before the cursor
 (Special keys in Insert mode)<br>CTRL-U  	(Special keys in Insert mode)<br>  delete all entered characters in the current line
 (Special keys in Insert mode)<br>CTRL-T  	(Special keys in Insert mode)<br>  insert one shiftwidth of indent in front of the current line
@@ -173,17 +173,17 @@
 (Digraphs)<br>:dig[raphs]  	(Digraphs)<br>  show current list of digraphs
 (Digraphs)<br>:dig[raphs] {char1}{char2} {number} ...  	(Digraphs)<br>  add digraph(s) to the list
 (Digraphs)<br>CTRL-K {char1} {char2}  	(Digraphs)<br>  enter digraph
-(Digraphs)<br>{char1} [BS] {char2}  	(Digraphs)<br>  enter digraph if 'digraph' option set
+(Digraphs)<br>{char1} &lt;BS&gt; {char2}  	(Digraphs)<br>  enter digraph if 'digraph' option set
 (Special inserts)<br>:r [file]  	(Special inserts)<br>  insert the contents of [file] below the cursor
 (Special inserts)<br>:r! {command} insert the standard output of {command} below the  	(Special inserts)<br>  cursor
 (Deleting text)<br>N x  	(Deleting text)<br>  delete N characters under and after the cursor
-(Deleting text)<br>N [Del]  	(Deleting text)<br>  delete N characters under and after the cursor
+(Deleting text)<br>N &lt;Del&gt;  	(Deleting text)<br>  delete N characters under and after the cursor
 (Deleting text)<br>N X  	(Deleting text)<br>  delete N characters before the cursor
 (Deleting text)<br>N d{motion}  	(Deleting text)<br>  delete the text that is moved over with {motion}
 (Deleting text)<br>{visual}d  	(Deleting text)<br>  delete the highlighted text
 (Deleting text)<br>N dd  	(Deleting text)<br>  delete N lines
 (Deleting text)<br>N D  	(Deleting text)<br>  delete to the end of the line (and N-1 more lines)
-(Deleting text)<br>N J  	(Deleting text)<br>  join N-1 lines (delete [EOL]s)
+(Deleting text)<br>N J  	(Deleting text)<br>  join N-1 lines (delete &lt;EOL&gt;s)
 (Deleting text)<br>{visual}J  	(Deleting text)<br>  join the highlighted lines
 (Deleting text)<br>N gJ  	(Deleting text)<br>  like "J", but without inserting spaces
 (Deleting text)<br>{visual}gJ  	(Deleting text)<br>  like "{visual}J", but without inserting spaces
@@ -225,18 +225,18 @@
 (Changing text)<br>g?{motion} perform rot13 encoding on the text that is moved over  	(Changing text)<br>  with {motion}
 (Changing text)<br>N CTRL-A  	(Changing text)<br>  add N to the number at or after the cursor
 (Changing text)<br>N CTRL-X  	(Changing text)<br>  subtract N from the number at or after the cursor
-(Changing text)<br>N [{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth left
-(Changing text)<br>N [[  	(Changing text)<br>  move N lines one shiftwidth left
-(Changing text)<br>N ]{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth right
-(Changing text)<br>N ]]  	(Changing text)<br>  move N lines one shiftwidth right
+(Changing text)<br>N &lt;{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth left
+(Changing text)<br>N &lt;&lt;  	(Changing text)<br>  move N lines one shiftwidth left
+(Changing text)<br>N &gt;{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth right
+(Changing text)<br>N &gt;&gt;  	(Changing text)<br>  move N lines one shiftwidth right
 (Changing text)<br>N gq{motion}  	(Changing text)<br>  format the lines that are moved over with {motion} to 'textwidth' length
 (Changing text)<br>:[range]ce[nter] [width]  	(Changing text)<br>  center the lines in [range]
 (Changing text)<br>:[range]le[ft] [indent]  	(Changing text)<br>  left-align the lines in [range] (with [indent])
 (Changing text)<br>:[range]ri[ght] [width]  	(Changing text)<br>  right-align the lines in [range]
-(Complex changes)<br>N !{motion}{command}[CR]  	(Complex changes)<br>  filter the lines that are moved over through {command}
-(Complex changes)<br>N !!{command}[CR]  	(Complex changes)<br>  filter N lines through {command}
-(Complex changes)<br>{visual}!{command}[CR]  	(Complex changes)<br>  filter the highlighted lines through {command}
-(Complex changes)<br>:[range]! {command}[CR]  	(Complex changes)<br>  filter [range] lines through {command}
+(Complex changes)<br>N !{motion}{command}&lt;CR&gt;  	(Complex changes)<br>  filter the lines that are moved over through {command}
+(Complex changes)<br>N !!{command}&lt;CR&gt;  	(Complex changes)<br>  filter N lines through {command}
+(Complex changes)<br>{visual}!{command}&lt;CR&gt;  	(Complex changes)<br>  filter the highlighted lines through {command}
+(Complex changes)<br>:[range]! {command}&lt;CR&gt;  	(Complex changes)<br>  filter [range] lines through {command}
 (Complex changes)<br>N ={motion}  	(Complex changes)<br>  filter the lines that are moved over through 'equalprg'
 (Complex changes)<br>N ==  	(Complex changes)<br>  filter N lines through 'equalprg'
 (Complex changes)<br>{visual}=  	(Complex changes)<br>  filter the highlighted lines through 'equalprg'
@@ -264,10 +264,10 @@
 (Text objects (only in Visual mode or after an operator))<br>N ib  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner block" (from "[(" to "])")
 (Text objects (only in Visual mode or after an operator))<br>N aB  	(Text objects (only in Visual mode or after an operator))<br>  Select "a Block" (from "[{" to "]}")
 (Text objects (only in Visual mode or after an operator))<br>N iB  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner Block" (from "[{" to "]}")
-(Text objects (only in Visual mode or after an operator))<br>N a]  	(Text objects (only in Visual mode or after an operator))<br>  Select "a [] block"
-(Text objects (only in Visual mode or after an operator))<br>N i]  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner [] block"
-(Text objects (only in Visual mode or after an operator))<br>N at  	(Text objects (only in Visual mode or after an operator))<br>  Select "a tag block" (from [aaa] to [/aaa])
-(Text objects (only in Visual mode or after an operator))<br>N it  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner tag block" (from [aaa] to [/aaa])
+(Text objects (only in Visual mode or after an operator))<br>N a&gt;  	(Text objects (only in Visual mode or after an operator))<br>  Select "a &lt;&gt; block"
+(Text objects (only in Visual mode or after an operator))<br>N i&gt;  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner &lt;&gt; block"
+(Text objects (only in Visual mode or after an operator))<br>N at  	(Text objects (only in Visual mode or after an operator))<br>  Select "a tag block" (from &lt;aaa&gt; to &lt;/aaa&gt;)
+(Text objects (only in Visual mode or after an operator))<br>N it  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner tag block" (from &lt;aaa&gt; to &lt;/aaa&gt;)
 (Text objects (only in Visual mode or after an operator))<br>N a'  	(Text objects (only in Visual mode or after an operator))<br>  Select "a single quoted string"
 (Text objects (only in Visual mode or after an operator))<br>N i'  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner single quoted string"
 (Text objects (only in Visual mode or after an operator))<br>N a"  	(Text objects (only in Visual mode or after an operator))<br>  Select "a double quoted string"
@@ -363,29 +363,29 @@
 (Various commands)<br>g CTRL-G  	(Various commands)<br>  show cursor column, line, and character position
 (Various commands)<br>CTRL-C  	(Various commands)<br>  during searches: Interrupt the search
 (Various commands)<br>CTRL-Break  	(Various commands)<br>  MS-Windows: during searches: Interrupt the search
-(Various commands)<br>[Del]  	(Various commands)<br>  while entering a count: delete last character
+(Various commands)<br>&lt;Del&gt;  	(Various commands)<br>  while entering a count: delete last character
 (Various commands)<br>:ve[rsion]  	(Various commands)<br>  show version information
 (Various commands)<br>:mode N  	(Various commands)<br>  set screen mode to N (obsolete)
 (Various commands)<br>:norm[al][!] {commands}  	(Various commands)<br>  execute Normal mode commands
 (Various commands)<br>Q  	(Various commands)<br>  switch to "Ex" mode
-(Various commands)<br>:redir ]{file}  	(Various commands)<br>  redirect messages to {file}
+(Various commands)<br>:redir &gt;{file}  	(Various commands)<br>  redirect messages to {file}
 (Various commands)<br>:silent[!] {command}  	(Various commands)<br>  execute {command} silently
 (Various commands)<br>:confirm {command}  	(Various commands)<br>  quit, write, etc., asking about unsaved changes or read-only files
 (Various commands)<br>:browse {command}  	(Various commands)<br>  open/read/write file, using a file selection dialog
-(Command-line editing)<br>[Esc]  	(Command-line editing)<br>  abandon command-line (if 'wildchar' is [Esc], type it twice)
+(Command-line editing)<br>&lt;Esc&gt;  	(Command-line editing)<br>  abandon command-line (if 'wildchar' is &lt;Esc&gt;, type it twice)
 (Command-line editing)<br>CTRL-V {char}  	(Command-line editing)<br>  insert {char} literally
 (Command-line editing)<br>CTRL-V {number} enter decimal value of character (up to  	(Command-line editing)<br>  three digits)
 (Command-line editing)<br>CTRL-K {char1} {char2}  	(Command-line editing)<br>  enter digraph (See |Q_di|)
 (Command-line editing)<br>CTRL-R {register}  	(Command-line editing)<br>  insert the contents of a register
-(Command-line editing)<br>[Left]/[Right]  	(Command-line editing)<br>  cursor left/right
-(Command-line editing)<br>[S-Left]/[S-Right]  	(Command-line editing)<br>  cursor one word left/right
+(Command-line editing)<br>&lt;Left&gt;/&lt;Right&gt;  	(Command-line editing)<br>  cursor left/right
+(Command-line editing)<br>&lt;S-Left&gt;/&lt;S-Right&gt;  	(Command-line editing)<br>  cursor one word left/right
 (Command-line editing)<br>CTRL-B/CTRL-E  	(Command-line editing)<br>  cursor to beginning/end of command-line
-(Command-line editing)<br>[BS]  	(Command-line editing)<br>  delete the character in front of the cursor
-(Command-line editing)<br>[Del]  	(Command-line editing)<br>  delete the character under the cursor
+(Command-line editing)<br>&lt;BS&gt;  	(Command-line editing)<br>  delete the character in front of the cursor
+(Command-line editing)<br>&lt;Del&gt;  	(Command-line editing)<br>  delete the character under the cursor
 (Command-line editing)<br>CTRL-W  	(Command-line editing)<br>  delete the word in front of the cursor
 (Command-line editing)<br>CTRL-U  	(Command-line editing)<br>  remove all characters
-(Command-line editing)<br>[Up]/[Down]  	(Command-line editing)<br>  recall older/newer command-line that starts with current command
-(Command-line editing)<br>[S-Up]/[S-Down]  	(Command-line editing)<br>  recall older/newer command-line from history
+(Command-line editing)<br>&lt;Up&gt;/&lt;Down&gt;  	(Command-line editing)<br>  recall older/newer command-line that starts with current command
+(Command-line editing)<br>&lt;S-Up&gt;/&lt;S-Down&gt;  	(Command-line editing)<br>  recall older/newer command-line from history
 (Command-line editing)<br>CTRL-G  	(Command-line editing)<br>  next match when 'incsearch' is active
 (Command-line editing)<br>CTRL-T  	(Command-line editing)<br>  previous match when 'incsearch' is active
 (Command-line editing)<br>:his[tory]  	(Command-line editing)<br>  show older command-lines
@@ -400,7 +400,7 @@
 (Ex ranges)<br>.  	(Ex ranges)<br>  the current line
 (Ex ranges)<br>$  	(Ex ranges)<br>  the last line in the file
 (Ex ranges)<br>%  	(Ex ranges)<br>  equal to 1,$ (the entire file)
-(Ex ranges)<br>*  	(Ex ranges)<br>  equal to '[,'] (visual area)
+(Ex ranges)<br>*  	(Ex ranges)<br>  equal to '&lt;,'&gt; (visual area)
 (Ex ranges)<br>'t  	(Ex ranges)<br>  position of mark t
 (Ex ranges)<br>/{pattern}[/]  	(Ex ranges)<br>  the next line where {pattern} matches
 (Ex ranges)<br>?{pattern}[?]  	(Ex ranges)<br>  the previous line where {pattern} matches
@@ -431,8 +431,8 @@
 (Writing and quitting)<br>:[range]w[rite][!]  	(Writing and quitting)<br>  write to the current file
 (Writing and quitting)<br>:[range]w[rite] {file}  	(Writing and quitting)<br>  write to {file}, unless it already exists
 (Writing and quitting)<br>:[range]w[rite]! {file}  	(Writing and quitting)<br>  write to {file}. Overwrite an existing file
-(Writing and quitting)<br>:[range]w[rite][!] ]]  	(Writing and quitting)<br>  append to the current file
-(Writing and quitting)<br>:[range]w[rite][!] ]] {file}  	(Writing and quitting)<br>  append to {file}
+(Writing and quitting)<br>:[range]w[rite][!] &gt;&gt;  	(Writing and quitting)<br>  append to the current file
+(Writing and quitting)<br>:[range]w[rite][!] &gt;&gt; {file}  	(Writing and quitting)<br>  append to {file}
 (Writing and quitting)<br>:[range]w[rite] !{cmd}  	(Writing and quitting)<br>  execute {cmd} with [range] lines as standard input
 (Writing and quitting)<br>:[range]up[date][!]  	(Writing and quitting)<br>  write to current file if modified
 (Writing and quitting)<br>:wa[ll][!]  	(Writing and quitting)<br>  write all changed buffers
@@ -476,8 +476,8 @@
 (Multi-window commands)<br>CTRL-W -  	(Multi-window commands)<br>  decrease current window height
 (Multi-window commands)<br>CTRL-W +  	(Multi-window commands)<br>  increase current window height
 (Multi-window commands)<br>CTRL-W _  	(Multi-window commands)<br>  set current window height (default: very high)
-(Multi-window commands)<br>CTRL-W [  	(Multi-window commands)<br>  decrease current window width
-(Multi-window commands)<br>CTRL-W ]  	(Multi-window commands)<br>  increase current window width
+(Multi-window commands)<br>CTRL-W &lt;  	(Multi-window commands)<br>  decrease current window width
+(Multi-window commands)<br>CTRL-W &gt;  	(Multi-window commands)<br>  increase current window width
 (Multi-window commands)<br>CTRL-W |  	(Multi-window commands)<br>  set current window width (default: widest possible)
 (Buffer list commands)<br>:buffers or :files  	(Buffer list commands)<br>  list all known buffer and file names
 (Buffer list commands)<br>:ball  	(Buffer list commands)<br>  or :sball edit all args/buffers
