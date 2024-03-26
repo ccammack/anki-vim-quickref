@@ -1,0 +1,523 @@
+#
+# https://github.com/ccammack/anki-vim-quickref
+#
+# Import vim-quickref.csv into Anki with these Import Options:
+#
+#   Type:                 Basic (and reversed card)
+#   Deck:                 vim-quickref
+#   Fields separated by:  Tab
+#   Allow HTML in fields: [checked]
+#
+# https://raw.githubusercontent.com/vim/vim/master/runtime/doc/quickref.txt
+#
+# *quickref.txt*  For Vim version 9.1.  Last change: 2024 Mar 03
+#
+(Left-right motions)<br>N h  	(Left-right motions)<br>  left (also: CTRL-H, [BS], or [Left] key)
+(Left-right motions)<br>N l  	(Left-right motions)<br>  right (also: [Space] or [Right] key)
+(Left-right motions)<br>0  	(Left-right motions)<br>  to first character in the line (also: [Home] key)
+(Left-right motions)<br>^  	(Left-right motions)<br>  to first non-blank character in the line
+(Left-right motions)<br>N $  	(Left-right motions)<br>  to the last character in the line (N-1 lines lower) (also: [End] key)
+(Left-right motions)<br>g0  	(Left-right motions)<br>  to first character in screen line (differs from "0" when lines wrap)
+(Left-right motions)<br>g^  	(Left-right motions)<br>  to first non-blank character in screen line (differs from "^" when lines wrap)
+(Left-right motions)<br>N g$  	(Left-right motions)<br>  to last character in screen line (differs from "$" when lines wrap)
+(Left-right motions)<br>gm  	(Left-right motions)<br>  to middle of the screen line
+(Left-right motions)<br>gM  	(Left-right motions)<br>  to middle of the line
+(Left-right motions)<br>N |  	(Left-right motions)<br>  to column N (default: 1)
+(Left-right motions)<br>N f{char}  	(Left-right motions)<br>  to the Nth occurrence of {char} to the right
+(Left-right motions)<br>N F{char}  	(Left-right motions)<br>  to the Nth occurrence of {char} to the left
+(Left-right motions)<br>N t{char}  	(Left-right motions)<br>  till before the Nth occurrence of {char} to the right
+(Left-right motions)<br>N T{char}  	(Left-right motions)<br>  till before the Nth occurrence of {char} to the left
+(Left-right motions)<br>N ;  	(Left-right motions)<br>  repeat the last "f", "F", "t", or "T" N times
+(Left-right motions)<br>N ,  	(Left-right motions)<br>  repeat the last "f", "F", "t", or "T" N times in opposite direction
+(Up-down motions)<br>N k  	(Up-down motions)<br>  up N lines (also: CTRL-P and [Up])
+(Up-down motions)<br>N j  	(Up-down motions)<br>  down N lines (also: CTRL-J, CTRL-N, [NL], and [Down])
+(Up-down motions)<br>N -  	(Up-down motions)<br>  up N lines, on the first non-blank character
+(Up-down motions)<br>N +  	(Up-down motions)<br>  down N lines, on the first non-blank character (also: CTRL-M and [CR])
+(Up-down motions)<br>N _  	(Up-down motions)<br>  down N-1 lines, on the first non-blank character
+(Up-down motions)<br>N G  	(Up-down motions)<br>  goto line N (default: last line), on the first non-blank character
+(Up-down motions)<br>N gg  	(Up-down motions)<br>  goto line N (default: first line), on the first non-blank character
+(Up-down motions)<br>N %  	(Up-down motions)<br>  goto line N percentage down in the file; N must be given, otherwise it is the |%| command
+(Up-down motions)<br>N gk  	(Up-down motions)<br>  up N screen lines (differs from "k" when line wraps)
+(Up-down motions)<br>N gj  	(Up-down motions)<br>  down N screen lines (differs from "j" when line wraps)
+(Text object motions)<br>N w  	(Text object motions)<br>  N words forward
+(Text object motions)<br>N W  	(Text object motions)<br>  N blank-separated |WORD|s forward
+(Text object motions)<br>N e  	(Text object motions)<br>  forward to the end of the Nth word
+(Text object motions)<br>N E  	(Text object motions)<br>  forward to the end of the Nth blank-separated |WORD|
+(Text object motions)<br>N b  	(Text object motions)<br>  N words backward
+(Text object motions)<br>N B  	(Text object motions)<br>  N blank-separated |WORD|s backward
+(Text object motions)<br>N ge  	(Text object motions)<br>  backward to the end of the Nth word
+(Text object motions)<br>N gE  	(Text object motions)<br>  backward to the end of the Nth blank-separated |WORD|
+(Text object motions)<br>N )  	(Text object motions)<br>  N sentences forward
+(Text object motions)<br>N (  	(Text object motions)<br>  N sentences backward
+(Text object motions)<br>N }  	(Text object motions)<br>  N paragraphs forward
+(Text object motions)<br>N {  	(Text object motions)<br>  N paragraphs backward
+(Text object motions)<br>N ]]  	(Text object motions)<br>  N sections forward, at start of section
+(Text object motions)<br>N [[  	(Text object motions)<br>  N sections backward, at start of section
+(Text object motions)<br>N ][  	(Text object motions)<br>  N sections forward, at end of section
+(Text object motions)<br>N []  	(Text object motions)<br>  N sections backward, at end of section
+(Text object motions)<br>N [(  	(Text object motions)<br>  N times back to unclosed '('
+(Text object motions)<br>N [{  	(Text object motions)<br>  N times back to unclosed '{'
+(Text object motions)<br>N [m  	(Text object motions)<br>  N times back to start of method (for Java)
+(Text object motions)<br>N [M  	(Text object motions)<br>  N times back to end of method (for Java)
+(Text object motions)<br>N ])  	(Text object motions)<br>  N times forward to unclosed ')'
+(Text object motions)<br>N ]}  	(Text object motions)<br>  N times forward to unclosed '}'
+(Text object motions)<br>N ]m  	(Text object motions)<br>  N times forward to start of method (for Java)
+(Text object motions)<br>N ]M  	(Text object motions)<br>  N times forward to end of method (for Java)
+(Text object motions)<br>N [#  	(Text object motions)<br>  N times back to unclosed "#if" or "#else"
+(Text object motions)<br>N ]#  	(Text object motions)<br>  N times forward to unclosed "#else" or "#endif"
+(Text object motions)<br>N [*  	(Text object motions)<br>  N times back to start of comment "/*"
+(Text object motions)<br>N ]*  	(Text object motions)<br>  N times forward to end of comment "*/"
+(Pattern searches)<br>N /{pattern}[/[offset]][CR]  	(Pattern searches)<br>  search forward for the Nth occurrence of {pattern}
+(Pattern searches)<br>N ?{pattern}[?[offset]][CR]  	(Pattern searches)<br>  search backward for the Nth occurrence of {pattern}
+(Pattern searches)<br>N /[CR]  	(Pattern searches)<br>  repeat last search, in the forward direction
+(Pattern searches)<br>N ?[CR]  	(Pattern searches)<br>  repeat last search, in the backward direction
+(Pattern searches)<br>N n  	(Pattern searches)<br>  repeat last search
+(Pattern searches)<br>N N  	(Pattern searches)<br>  repeat last search, in opposite direction
+(Pattern searches)<br>N *  	(Pattern searches)<br>  search forward for the identifier under the cursor
+(Pattern searches)<br>N #  	(Pattern searches)<br>  search backward for the identifier under the cursor
+(Pattern searches)<br>N g*  	(Pattern searches)<br>  like "*", but also find partial matches
+(Pattern searches)<br>N g#  	(Pattern searches)<br>  like "#", but also find partial matches
+(Pattern searches)<br>gd  	(Pattern searches)<br>  goto local declaration of identifier under the cursor
+(Pattern searches)<br>gD  	(Pattern searches)<br>  goto global declaration of identifier under the cursor
+(Marks and motions)<br>m{a-zA-Z}  	(Marks and motions)<br>  mark current position with mark {a-zA-Z}
+(Marks and motions)<br>`{a-z}  	(Marks and motions)<br>  go to mark {a-z} within current file
+(Marks and motions)<br>`{A-Z}  	(Marks and motions)<br>  go to mark {A-Z} in any file
+(Marks and motions)<br>`{0-9}  	(Marks and motions)<br>  go to the position where Vim was previously exited
+(Marks and motions)<br>``  	(Marks and motions)<br>  go to the position before the last jump
+(Marks and motions)<br>`"  	(Marks and motions)<br>  go to the position when last editing this file
+(Marks and motions)<br>`[  	(Marks and motions)<br>  go to the start of the previously operated or put text
+(Marks and motions)<br>`]  	(Marks and motions)<br>  go to the end of the previously operated or put text
+(Marks and motions)<br>`[  	(Marks and motions)<br>  go to the start of the (previous) Visual area
+(Marks and motions)<br>`]  	(Marks and motions)<br>  go to the end of the (previous) Visual area
+(Marks and motions)<br>`.  	(Marks and motions)<br>  go to the position of the last change in this file
+(Marks and motions)<br>'{a-zA-Z0-9[]'"[].}  	(Marks and motions)<br>  same as `, but on the first non-blank in the line
+(Marks and motions)<br>:marks  	(Marks and motions)<br>  print the active marks
+(Marks and motions)<br>N CTRL-O  	(Marks and motions)<br>  go to Nth older position in jump list
+(Marks and motions)<br>N CTRL-I  	(Marks and motions)<br>  go to Nth newer position in jump list
+(Marks and motions)<br>:ju[mps]  	(Marks and motions)<br>  print the jump list
+(Various motions)<br>%  	(Various motions)<br>  find the next brace, bracket, comment, or "#if"/ "#else"/"#endif" in this line and go to its match
+(Various motions)<br>N H  	(Various motions)<br>  go to the Nth line in the window, on the first non-blank
+(Various motions)<br>M  	(Various motions)<br>  go to the middle line in the window, on the first non-blank
+(Various motions)<br>N L  	(Various motions)<br>  go to the Nth line from the bottom, on the first non-blank
+(Various motions)<br>N go  	(Various motions)<br>  go to Nth byte in the buffer
+(Various motions)<br>:[range]go[to] [off]  	(Various motions)<br>  go to [off] byte in the buffer
+(Using tags)<br>:ta[g][!] {tag}  	(Using tags)<br>  jump to tag {tag}
+(Using tags)<br>:[count]ta[g][!]  	(Using tags)<br>  jump to [count]'th newer tag in tag list
+(Using tags)<br>CTRL-]  	(Using tags)<br>  jump to the tag under cursor, unless changes have been made
+(Using tags)<br>:ts[elect][!] [tag]  	(Using tags)<br>  list matching tags and select one to jump to
+(Using tags)<br>:tj[ump][!] [tag]  	(Using tags)<br>  jump to tag [tag] or select from list when there are multiple matches
+(Using tags)<br>:lt[ag][!] [tag]  	(Using tags)<br>  jump to tag [tag] and add matching tags to the location list
+(Using tags)<br>:tags  	(Using tags)<br>  print tag list
+(Using tags)<br>N CTRL-T  	(Using tags)<br>  jump back from Nth older tag in tag list
+(Using tags)<br>:[count]po[p][!]  	(Using tags)<br>  jump back from [count]'th older tag in tag list
+(Using tags)<br>:[count]tn[ext][!]  	(Using tags)<br>  jump to [count]'th next matching tag
+(Using tags)<br>:[count]tp[revious][!]  	(Using tags)<br>  jump to [count]'th previous matching tag
+(Using tags)<br>:[count]tr[ewind][!]  	(Using tags)<br>  jump to [count]'th matching tag
+(Using tags)<br>:tl[ast][!]  	(Using tags)<br>  jump to last matching tag
+(Using tags)<br>:pt[ag] {tag}  	(Using tags)<br>  open a preview window to show tag {tag}
+(Using tags)<br>CTRL-W }  	(Using tags)<br>  like CTRL-] but show tag in preview window
+(Using tags)<br>:pts[elect]  	(Using tags)<br>  like ":tselect" but show tag in preview window
+(Using tags)<br>:ptj[ump]  	(Using tags)<br>  like ":tjump" but show tag in preview window
+(Using tags)<br>:pc[lose]  	(Using tags)<br>  close tag preview window
+(Using tags)<br>CTRL-W z  	(Using tags)<br>  close tag preview window
+(Scrolling)<br>N CTRL-E  	(Scrolling)<br>  window N lines downwards (default: 1)
+(Scrolling)<br>N CTRL-D  	(Scrolling)<br>  window N lines Downwards (default: 1/2 window)
+(Scrolling)<br>N CTRL-F  	(Scrolling)<br>  window N pages Forwards (downwards)
+(Scrolling)<br>N CTRL-Y  	(Scrolling)<br>  window N lines upwards (default: 1)
+(Scrolling)<br>N CTRL-U  	(Scrolling)<br>  window N lines Upwards (default: 1/2 window)
+(Scrolling)<br>N CTRL-B  	(Scrolling)<br>  window N pages Backwards (upwards)
+(Scrolling)<br>z[CR] or zt  	(Scrolling)<br>  redraw, current line at top of window
+(Scrolling)<br>z.  	(Scrolling)<br>  or zz redraw, current line at center of window
+(Scrolling)<br>z-  	(Scrolling)<br>  or zb redraw, current line at bottom of window
+(Scrolling)<br>N zh  	(Scrolling)<br>  scroll screen N characters to the right
+(Scrolling)<br>N zl  	(Scrolling)<br>  scroll screen N characters to the left
+(Scrolling)<br>N zH  	(Scrolling)<br>  scroll screen half a screenwidth to the right
+(Scrolling)<br>N zL  	(Scrolling)<br>  scroll screen half a screenwidth to the left
+(Inserting text)<br>N a  	(Inserting text)<br>  append text after the cursor (N times)
+(Inserting text)<br>N A  	(Inserting text)<br>  append text at the end of the line (N times)
+(Inserting text)<br>N i  	(Inserting text)<br>  insert text before the cursor (N times) (also: [Insert])
+(Inserting text)<br>N I  	(Inserting text)<br>  insert text before the first non-blank in the line (N times)
+(Inserting text)<br>N gI  	(Inserting text)<br>  insert text in column 1 (N times)
+(Inserting text)<br>N o  	(Inserting text)<br>  open a new line below the current line, append text (N times)
+(Inserting text)<br>N O  	(Inserting text)<br>  open a new line above the current line, append text (N times)
+(Inserting text)<br>:star[tinsert][!]  	(Inserting text)<br>  start Insert mode, append when [!] used
+(Inserting text)<br>:startr[eplace][!]  	(Inserting text)<br>  start Replace mode, at EOL when [!] used
+(Inserting text)<br>I  	(Inserting text)<br>  insert the same text in front of all the selected lines
+(Inserting text)<br>A  	(Inserting text)<br>  append the same text after all the selected lines
+(Insert mode keys)<br>[Esc]  	(Insert mode keys)<br>  end Insert mode, back to Normal mode
+(Insert mode keys)<br>CTRL-C  	(Insert mode keys)<br>  like [Esc], but do not use an abbreviation
+(Insert mode keys)<br>CTRL-O {command}  	(Insert mode keys)<br>  execute {command} and return to Insert mode
+(Insert mode keys)<br>cursor keys  	(Insert mode keys)<br>  move cursor left/right/up/down
+(Insert mode keys)<br>shift-left/right  	(Insert mode keys)<br>  one word left/right
+(Insert mode keys)<br>shift-up/down  	(Insert mode keys)<br>  one screenful backward/forward
+(Insert mode keys)<br>[End]  	(Insert mode keys)<br>  cursor after last character in the line
+(Insert mode keys)<br>[Home]  	(Insert mode keys)<br>  cursor to first character in the line
+(Special keys in Insert mode)<br>CTRL-V {char}..  	(Special keys in Insert mode)<br>  insert character literally, or enter decimal byte value
+(Special keys in Insert mode)<br>[NL] or [CR] or CTRL-M or CTRL-J  	(Special keys in Insert mode)<br>  begin new line
+(Special keys in Insert mode)<br>CTRL-E  	(Special keys in Insert mode)<br>  insert the character from below the cursor
+(Special keys in Insert mode)<br>CTRL-Y  	(Special keys in Insert mode)<br>  insert the character from above the cursor
+(Special keys in Insert mode)<br>CTRL-A  	(Special keys in Insert mode)<br>  insert previously inserted text
+(Special keys in Insert mode)<br>CTRL-@  	(Special keys in Insert mode)<br>  insert previously inserted text and stop Insert mode
+(Special keys in Insert mode)<br>CTRL-R {register}  	(Special keys in Insert mode)<br>  insert the contents of a register
+(Special keys in Insert mode)<br>CTRL-N  	(Special keys in Insert mode)<br>  insert next match of identifier before the cursor
+(Special keys in Insert mode)<br>CTRL-P  	(Special keys in Insert mode)<br>  insert previous match of identifier before the cursor
+(Special keys in Insert mode)<br>CTRL-X ...  	(Special keys in Insert mode)<br>  complete the word before the cursor in various ways
+(Special keys in Insert mode)<br>[BS] or CTRL-H  	(Special keys in Insert mode)<br>  delete the character before the cursor
+(Special keys in Insert mode)<br>[Del]  	(Special keys in Insert mode)<br>  delete the character under the cursor
+(Special keys in Insert mode)<br>CTRL-W  	(Special keys in Insert mode)<br>  delete word before the cursor
+(Special keys in Insert mode)<br>CTRL-U  	(Special keys in Insert mode)<br>  delete all entered characters in the current line
+(Special keys in Insert mode)<br>CTRL-T  	(Special keys in Insert mode)<br>  insert one shiftwidth of indent in front of the current line
+(Special keys in Insert mode)<br>CTRL-D  	(Special keys in Insert mode)<br>  delete one shiftwidth of indent in front of the current line
+(Special keys in Insert mode)<br>0 CTRL-D  	(Special keys in Insert mode)<br>  delete all indent in the current line
+(Special keys in Insert mode)<br>^ CTRL-D  	(Special keys in Insert mode)<br>  delete all indent in the current line, restore indent in next line
+(Digraphs)<br>:dig[raphs]  	(Digraphs)<br>  show current list of digraphs
+(Digraphs)<br>:dig[raphs] {char1}{char2} {number} ...  	(Digraphs)<br>  add digraph(s) to the list
+(Digraphs)<br>CTRL-K {char1} {char2}  	(Digraphs)<br>  enter digraph
+(Digraphs)<br>{char1} [BS] {char2}  	(Digraphs)<br>  enter digraph if 'digraph' option set
+(Special inserts)<br>:r [file]  	(Special inserts)<br>  insert the contents of [file] below the cursor
+(Special inserts)<br>:r! {command} insert the standard output of {command} below the  	(Special inserts)<br>  cursor
+(Deleting text)<br>N x  	(Deleting text)<br>  delete N characters under and after the cursor
+(Deleting text)<br>N [Del]  	(Deleting text)<br>  delete N characters under and after the cursor
+(Deleting text)<br>N X  	(Deleting text)<br>  delete N characters before the cursor
+(Deleting text)<br>N d{motion}  	(Deleting text)<br>  delete the text that is moved over with {motion}
+(Deleting text)<br>{visual}d  	(Deleting text)<br>  delete the highlighted text
+(Deleting text)<br>N dd  	(Deleting text)<br>  delete N lines
+(Deleting text)<br>N D  	(Deleting text)<br>  delete to the end of the line (and N-1 more lines)
+(Deleting text)<br>N J  	(Deleting text)<br>  join N-1 lines (delete [EOL]s)
+(Deleting text)<br>{visual}J  	(Deleting text)<br>  join the highlighted lines
+(Deleting text)<br>N gJ  	(Deleting text)<br>  like "J", but without inserting spaces
+(Deleting text)<br>{visual}gJ  	(Deleting text)<br>  like "{visual}J", but without inserting spaces
+(Deleting text)<br>:[range]d [x]  	(Deleting text)<br>  delete [range] lines [into register x]
+(Copying and moving text)<br>"{char}  	(Copying and moving text)<br>  use register {char} for the next delete, yank, or put
+(Copying and moving text)<br>:reg  	(Copying and moving text)<br>  show the contents of all registers
+(Copying and moving text)<br>:reg {arg}  	(Copying and moving text)<br>  show the contents of registers mentioned in {arg}
+(Copying and moving text)<br>N y{motion}  	(Copying and moving text)<br>  yank the text moved over with {motion} into a register
+(Copying and moving text)<br>{visual}y  	(Copying and moving text)<br>  yank the highlighted text into a register
+(Copying and moving text)<br>N yy  	(Copying and moving text)<br>  yank N lines into a register
+(Copying and moving text)<br>N Y  	(Copying and moving text)<br>  yank N lines into a register
+(Copying and moving text)<br>N p  	(Copying and moving text)<br>  put a register after the cursor position (N times)
+(Copying and moving text)<br>N P  	(Copying and moving text)<br>  put a register before the cursor position (N times)
+(Copying and moving text)<br>N ]p  	(Copying and moving text)<br>  like p, but adjust indent to current line
+(Copying and moving text)<br>N [p  	(Copying and moving text)<br>  like P, but adjust indent to current line
+(Copying and moving text)<br>N gp  	(Copying and moving text)<br>  like p, but leave cursor after the new text
+(Copying and moving text)<br>N gP  	(Copying and moving text)<br>  like P, but leave cursor after the new text
+(Changing text)<br>N r{char}  	(Changing text)<br>  replace N characters with {char}
+(Changing text)<br>N gr{char}  	(Changing text)<br>  replace N characters without affecting layout
+(Changing text)<br>N R  	(Changing text)<br>  enter Replace mode (repeat the entered text N times)
+(Changing text)<br>N gR  	(Changing text)<br>  enter virtual Replace mode: Like Replace mode but without affecting layout
+(Changing text)<br>{visual}r{char}  	(Changing text)<br>  in Visual block mode: Replace each char of the selected text with {char}
+(Changing text)<br>N c{motion}  	(Changing text)<br>  change the text that is moved over with {motion}
+(Changing text)<br>{visual}c  	(Changing text)<br>  change the highlighted text
+(Changing text)<br>N cc  	(Changing text)<br>  change N lines
+(Changing text)<br>N S  	(Changing text)<br>  change N lines
+(Changing text)<br>N C  	(Changing text)<br>  change to the end of the line (and N-1 more lines)
+(Changing text)<br>N s  	(Changing text)<br>  change N characters
+(Changing text)<br>{visual}c  	(Changing text)<br>  in Visual block mode: Change each of the selected lines with the entered text
+(Changing text)<br>{visual}C  	(Changing text)<br>  in Visual block mode: Change each of the selected lines until end-of-line with the entered text
+(Changing text)<br>N ~  	(Changing text)<br>  switch case for N characters and advance cursor
+(Changing text)<br>{visual}~  	(Changing text)<br>  switch case for highlighted text
+(Changing text)<br>{visual}u  	(Changing text)<br>  make highlighted text lowercase
+(Changing text)<br>{visual}U  	(Changing text)<br>  make highlighted text uppercase
+(Changing text)<br>g~{motion} switch case for the text that is moved over with  	(Changing text)<br>  {motion}
+(Changing text)<br>gu{motion} make the text that is moved over with {motion}  	(Changing text)<br>  lowercase
+(Changing text)<br>gU{motion} make the text that is moved over with {motion}  	(Changing text)<br>  uppercase
+(Changing text)<br>{visual}g?  	(Changing text)<br>  perform rot13 encoding on highlighted text
+(Changing text)<br>g?{motion} perform rot13 encoding on the text that is moved over  	(Changing text)<br>  with {motion}
+(Changing text)<br>N CTRL-A  	(Changing text)<br>  add N to the number at or after the cursor
+(Changing text)<br>N CTRL-X  	(Changing text)<br>  subtract N from the number at or after the cursor
+(Changing text)<br>N [{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth left
+(Changing text)<br>N [[  	(Changing text)<br>  move N lines one shiftwidth left
+(Changing text)<br>N ]{motion}  	(Changing text)<br>  move the lines that are moved over with {motion} one shiftwidth right
+(Changing text)<br>N ]]  	(Changing text)<br>  move N lines one shiftwidth right
+(Changing text)<br>N gq{motion}  	(Changing text)<br>  format the lines that are moved over with {motion} to 'textwidth' length
+(Changing text)<br>:[range]ce[nter] [width]  	(Changing text)<br>  center the lines in [range]
+(Changing text)<br>:[range]le[ft] [indent]  	(Changing text)<br>  left-align the lines in [range] (with [indent])
+(Changing text)<br>:[range]ri[ght] [width]  	(Changing text)<br>  right-align the lines in [range]
+(Complex changes)<br>N !{motion}{command}[CR]  	(Complex changes)<br>  filter the lines that are moved over through {command}
+(Complex changes)<br>N !!{command}[CR]  	(Complex changes)<br>  filter N lines through {command}
+(Complex changes)<br>{visual}!{command}[CR]  	(Complex changes)<br>  filter the highlighted lines through {command}
+(Complex changes)<br>:[range]! {command}[CR]  	(Complex changes)<br>  filter [range] lines through {command}
+(Complex changes)<br>N ={motion}  	(Complex changes)<br>  filter the lines that are moved over through 'equalprg'
+(Complex changes)<br>N ==  	(Complex changes)<br>  filter N lines through 'equalprg'
+(Complex changes)<br>{visual}=  	(Complex changes)<br>  filter the highlighted lines through 'equalprg'
+(Complex changes)<br>:[range]s[ubstitute]/{pattern}/{string}/[g][c]  	(Complex changes)<br>  substitute {pattern} by {string} in [range] lines; with [g], replace all occurrences of {pattern}; with [c], confirm each replacement
+(Complex changes)<br>:[range]s[ubstitute] [g][c]  	(Complex changes)<br>  repeat previous ":s" with new range and options
+(Complex changes)<br>&  	(Complex changes)<br>  Repeat previous ":s" on current line without options
+(Complex changes)<br>:[range]ret[ab][!] [tabstop]  	(Complex changes)<br>  set 'tabstop' to new value and adjust white space accordingly
+(Visual mode)<br>v  	(Visual mode)<br>  start highlighting characters } move cursor and use
+(Visual mode)<br>V  	(Visual mode)<br>  start highlighting linewise } operator to affect
+(Visual mode)<br>CTRL-V  	(Visual mode)<br>  start highlighting blockwise } highlighted text
+(Visual mode)<br>o  	(Visual mode)<br>  exchange cursor position with start of highlighting
+(Visual mode)<br>gv  	(Visual mode)<br>  start highlighting on previous visual area
+(Visual mode)<br>v  	(Visual mode)<br>  highlight characters or stop highlighting
+(Visual mode)<br>V  	(Visual mode)<br>  highlight linewise or stop highlighting
+(Visual mode)<br>CTRL-V  	(Visual mode)<br>  highlight blockwise or stop highlighting
+(Text objects (only in Visual mode or after an operator))<br>N aw  	(Text objects (only in Visual mode or after an operator))<br>  Select "a word"
+(Text objects (only in Visual mode or after an operator))<br>N iw  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner word"
+(Text objects (only in Visual mode or after an operator))<br>N aW  	(Text objects (only in Visual mode or after an operator))<br>  Select "a |WORD|"
+(Text objects (only in Visual mode or after an operator))<br>N iW  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner |WORD|"
+(Text objects (only in Visual mode or after an operator))<br>N as  	(Text objects (only in Visual mode or after an operator))<br>  Select "a sentence"
+(Text objects (only in Visual mode or after an operator))<br>N is  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner sentence"
+(Text objects (only in Visual mode or after an operator))<br>N ap  	(Text objects (only in Visual mode or after an operator))<br>  Select "a paragraph"
+(Text objects (only in Visual mode or after an operator))<br>N ip  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner paragraph"
+(Text objects (only in Visual mode or after an operator))<br>N ab  	(Text objects (only in Visual mode or after an operator))<br>  Select "a block" (from "[(" to "])")
+(Text objects (only in Visual mode or after an operator))<br>N ib  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner block" (from "[(" to "])")
+(Text objects (only in Visual mode or after an operator))<br>N aB  	(Text objects (only in Visual mode or after an operator))<br>  Select "a Block" (from "[{" to "]}")
+(Text objects (only in Visual mode or after an operator))<br>N iB  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner Block" (from "[{" to "]}")
+(Text objects (only in Visual mode or after an operator))<br>N a]  	(Text objects (only in Visual mode or after an operator))<br>  Select "a [] block"
+(Text objects (only in Visual mode or after an operator))<br>N i]  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner [] block"
+(Text objects (only in Visual mode or after an operator))<br>N at  	(Text objects (only in Visual mode or after an operator))<br>  Select "a tag block" (from [aaa] to [/aaa])
+(Text objects (only in Visual mode or after an operator))<br>N it  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner tag block" (from [aaa] to [/aaa])
+(Text objects (only in Visual mode or after an operator))<br>N a'  	(Text objects (only in Visual mode or after an operator))<br>  Select "a single quoted string"
+(Text objects (only in Visual mode or after an operator))<br>N i'  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner single quoted string"
+(Text objects (only in Visual mode or after an operator))<br>N a"  	(Text objects (only in Visual mode or after an operator))<br>  Select "a double quoted string"
+(Text objects (only in Visual mode or after an operator))<br>N i"  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner double quoted string"
+(Text objects (only in Visual mode or after an operator))<br>N a`  	(Text objects (only in Visual mode or after an operator))<br>  Select "a backward quoted string"
+(Text objects (only in Visual mode or after an operator))<br>N i`  	(Text objects (only in Visual mode or after an operator))<br>  Select "inner backward quoted string"
+(Repeating commands)<br>N .  	(Repeating commands)<br>  repeat last change (with count replaced with N)
+(Repeating commands)<br>q{a-z}  	(Repeating commands)<br>  record typed characters into register {a-z}
+(Repeating commands)<br>q{A-Z}  	(Repeating commands)<br>  record typed characters, appended to register {a-z}
+(Repeating commands)<br>q  	(Repeating commands)<br>  stop recording
+(Repeating commands)<br>N @{a-z}  	(Repeating commands)<br>  execute the contents of register {a-z} (N times)
+(Repeating commands)<br>N @@  	(Repeating commands)<br>  repeat previous @{a-z} (N times)
+(Repeating commands)<br>:@{a-z}  	(Repeating commands)<br>  execute the contents of register {a-z} as an Ex command
+(Repeating commands)<br>:@@  	(Repeating commands)<br>  repeat previous :@{a-z}
+(Repeating commands)<br>:[range]g[lobal]/{pattern}/[cmd]  	(Repeating commands)<br>  execute Ex command [cmd] (default: ":p") on the lines within [range] where {pattern} matches
+(Repeating commands)<br>:[range]g[lobal]!/{pattern}/[cmd]  	(Repeating commands)<br>  execute Ex command [cmd] (default: ":p") on the lines within [range] where {pattern} does NOT match
+(Repeating commands)<br>:so[urce] {file}  	(Repeating commands)<br>  read Ex commands from {file}
+(Repeating commands)<br>:so[urce]! {file}  	(Repeating commands)<br>  read Vim commands from {file}
+(Repeating commands)<br>:sl[eep] [sec]  	(Repeating commands)<br>  don't do anything for [sec] seconds
+(Repeating commands)<br>N gs  	(Repeating commands)<br>  goto Sleep for N seconds
+(Key mapping)<br>:ma[p] {lhs} {rhs}  	(Key mapping)<br>  map {lhs} to {rhs} in Normal and Visual mode
+(Key mapping)<br>:ma[p]! {lhs} {rhs} map {lhs} to {rhs} in Insert and Command-line  	(Key mapping)<br>  mode
+(Key mapping)<br>:no[remap][!] {lhs} {rhs}  	(Key mapping)<br>  same as ":map", no remapping for this {rhs}
+(Key mapping)<br>:unm[ap] {lhs}  	(Key mapping)<br>  remove the mapping of {lhs} for Normal and Visual mode
+(Key mapping)<br>:unm[ap]! {lhs}  	(Key mapping)<br>  remove the mapping of {lhs} for Insert and Command-line mode
+(Key mapping)<br>:ma[p] [lhs]  	(Key mapping)<br>  list mappings (starting with [lhs]) for Normal and Visual mode
+(Key mapping)<br>:ma[p]! [lhs]  	(Key mapping)<br>  list mappings (starting with [lhs]) for Insert and Command-line mode
+(Key mapping)<br>:cmap/:cunmap/:cnoremap  	(Key mapping)<br>  like ":map!"/":unmap!"/":noremap!" but for Command-line mode only
+(Key mapping)<br>:imap/:iunmap/:inoremap  	(Key mapping)<br>  like ":map!"/":unmap!"/":noremap!" but for Insert mode only
+(Key mapping)<br>:nmap/:nunmap/:nnoremap  	(Key mapping)<br>  like ":map"/":unmap"/":noremap" but for Normal mode only
+(Key mapping)<br>:vmap/:vunmap/:vnoremap  	(Key mapping)<br>  like ":map"/":unmap"/":noremap" but for Visual mode only
+(Key mapping)<br>:omap/:ounmap/:onoremap  	(Key mapping)<br>  like ":map"/":unmap"/":noremap" but only for when an operator is pending
+(Key mapping)<br>:mapc[lear]  	(Key mapping)<br>  remove mappings for Normal and Visual mode
+(Key mapping)<br>:mapc[lear]!  	(Key mapping)<br>  remove mappings for Insert and Cmdline mode
+(Key mapping)<br>:imapc[lear]  	(Key mapping)<br>  remove mappings for Insert mode
+(Key mapping)<br>:vmapc[lear]  	(Key mapping)<br>  remove mappings for Visual mode
+(Key mapping)<br>:omapc[lear]  	(Key mapping)<br>  remove mappings for Operator-pending mode
+(Key mapping)<br>:nmapc[lear]  	(Key mapping)<br>  remove mappings for Normal mode
+(Key mapping)<br>:cmapc[lear]  	(Key mapping)<br>  remove mappings for Cmdline mode
+(Key mapping)<br>:mk[exrc][!] [file] write current mappings, abbreviations, and  	(Key mapping)<br>  settings to [file] (default: ".exrc"; use ! to overwrite)
+(Key mapping)<br>:mkv[imrc][!] [file]  	(Key mapping)<br>  same as ":mkexrc", but with default ".vimrc"
+(Key mapping)<br>:mks[ession][!] [file]  	(Key mapping)<br>  like ":mkvimrc", but store current files, windows, etc. too, to be able to continue this session later
+(Abbreviations)<br>:ab[breviate] {lhs} {rhs}  	(Abbreviations)<br>  add abbreviation for {lhs} to {rhs}
+(Abbreviations)<br>:ab[breviate] {lhs}  	(Abbreviations)<br>  show abbr's that start with {lhs}
+(Abbreviations)<br>:ab[breviate]  	(Abbreviations)<br>  show all abbreviations
+(Abbreviations)<br>:una[bbreviate] {lhs}  	(Abbreviations)<br>  remove abbreviation for {lhs}
+(Abbreviations)<br>:norea[bbrev] [lhs] [rhs]  	(Abbreviations)<br>  like ":ab", but don't remap [rhs]
+(Abbreviations)<br>:iab/:iunab/:inoreab  	(Abbreviations)<br>  like ":ab", but only for Insert mode
+(Abbreviations)<br>:cab/:cunab/:cnoreab  	(Abbreviations)<br>  like ":ab", but only for Command-line mode
+(Abbreviations)<br>:abc[lear]  	(Abbreviations)<br>  remove all abbreviations
+(Abbreviations)<br>:cabc[lear]  	(Abbreviations)<br>  remove all abbr's for Cmdline mode
+(Abbreviations)<br>:iabc[lear]  	(Abbreviations)<br>  remove all abbr's for Insert mode
+(Options)<br>:se[t]  	(Options)<br>  show all modified options
+(Options)<br>:se[t] all  	(Options)<br>  show all non-termcap options
+(Options)<br>:se[t] termcap  	(Options)<br>  show all termcap options
+(Options)<br>:se[t] {option}  	(Options)<br>  set boolean option (switch it on), show string or number option
+(Options)<br>:se[t] no{option}  	(Options)<br>  reset boolean option (switch it off)
+(Options)<br>:se[t] inv{option}  	(Options)<br>  invert boolean option
+(Options)<br>:se[t] {option}={value}  	(Options)<br>  set string/number option to {value}
+(Options)<br>:se[t] {option}+={value} append {value} to string option, add  	(Options)<br>  {value} to number option
+(Options)<br>:se[t] {option}-={value} remove {value} to string option,  	(Options)<br>  subtract {value} from number option
+(Options)<br>:se[t] {option}?  	(Options)<br>  show value of {option}
+(Options)<br>:se[t] {option}&  	(Options)<br>  reset {option} to its default value
+(Options)<br>:setl[ocal]  	(Options)<br>  like ":set" but set the local value for options that have one
+(Options)<br>:setg[lobal]  	(Options)<br>  like ":set" but set the global value of a local option
+(Options)<br>:fix[del]  	(Options)<br>  set value of 't_kD' according to value of 't_kb'
+(Options)<br>:opt[ions]  	(Options)<br>  open a new window to view and set options, grouped by functionality, a one line explanation and links to the help
+(Undo/Redo commands)<br>N u  	(Undo/Redo commands)<br>  undo last N changes
+(Undo/Redo commands)<br>N CTRL-R  	(Undo/Redo commands)<br>  redo last N undone changes
+(Undo/Redo commands)<br>U  	(Undo/Redo commands)<br>  restore last changed line
+(External commands)<br>:sh[ell]  	(External commands)<br>  start a shell
+(External commands)<br>:!{command}  	(External commands)<br>  execute {command} with a shell
+(External commands)<br>K  	(External commands)<br>  lookup keyword under the cursor with 'keywordprg' program (default: "man")
+(Quickfix commands)<br>:cc [nr]  	(Quickfix commands)<br>  display error [nr] (default is the same again)
+(Quickfix commands)<br>:cn  	(Quickfix commands)<br>  display the next error
+(Quickfix commands)<br>:cp  	(Quickfix commands)<br>  display the previous error
+(Quickfix commands)<br>:cl  	(Quickfix commands)<br>  list all errors
+(Quickfix commands)<br>:cf  	(Quickfix commands)<br>  read errors from the file 'errorfile'
+(Quickfix commands)<br>:cgetb  	(Quickfix commands)<br>  like :cbuffer but don't jump to the first error
+(Quickfix commands)<br>:cg  	(Quickfix commands)<br>  like :cfile but don't jump to the first error
+(Quickfix commands)<br>:cgete  	(Quickfix commands)<br>  like :cexpr but don't jump to the first error
+(Quickfix commands)<br>:caddf  	(Quickfix commands)<br>  add errors from the error file to the current quickfix list
+(Quickfix commands)<br>:cad  	(Quickfix commands)<br>  add errors from an expression to the current quickfix list
+(Quickfix commands)<br>:cb  	(Quickfix commands)<br>  read errors from text in a buffer
+(Quickfix commands)<br>:cex  	(Quickfix commands)<br>  read errors from an expression
+(Quickfix commands)<br>:cq  	(Quickfix commands)<br>  quit without writing and return error code (to the compiler)
+(Quickfix commands)<br>:make [args]  	(Quickfix commands)<br>  start make, read errors, and jump to first error
+(Quickfix commands)<br>:gr[ep] [args]  	(Quickfix commands)<br>  execute 'grepprg' to find matches and jump to the first one
+(Various commands)<br>CTRL-L  	(Various commands)<br>  clear and redraw the screen
+(Various commands)<br>CTRL-G  	(Various commands)<br>  show current file name (with path) and cursor position
+(Various commands)<br>ga  	(Various commands)<br>  show ascii value of character under cursor in decimal, hex, and octal
+(Various commands)<br>g8  	(Various commands)<br>  for utf-8 encoding: show byte sequence for character under cursor in hex
+(Various commands)<br>g CTRL-G  	(Various commands)<br>  show cursor column, line, and character position
+(Various commands)<br>CTRL-C  	(Various commands)<br>  during searches: Interrupt the search
+(Various commands)<br>CTRL-Break  	(Various commands)<br>  MS-Windows: during searches: Interrupt the search
+(Various commands)<br>[Del]  	(Various commands)<br>  while entering a count: delete last character
+(Various commands)<br>:ve[rsion]  	(Various commands)<br>  show version information
+(Various commands)<br>:mode N  	(Various commands)<br>  set screen mode to N (obsolete)
+(Various commands)<br>:norm[al][!] {commands}  	(Various commands)<br>  execute Normal mode commands
+(Various commands)<br>Q  	(Various commands)<br>  switch to "Ex" mode
+(Various commands)<br>:redir ]{file}  	(Various commands)<br>  redirect messages to {file}
+(Various commands)<br>:silent[!] {command}  	(Various commands)<br>  execute {command} silently
+(Various commands)<br>:confirm {command}  	(Various commands)<br>  quit, write, etc., asking about unsaved changes or read-only files
+(Various commands)<br>:browse {command}  	(Various commands)<br>  open/read/write file, using a file selection dialog
+(Command-line editing)<br>[Esc]  	(Command-line editing)<br>  abandon command-line (if 'wildchar' is [Esc], type it twice)
+(Command-line editing)<br>CTRL-V {char}  	(Command-line editing)<br>  insert {char} literally
+(Command-line editing)<br>CTRL-V {number} enter decimal value of character (up to  	(Command-line editing)<br>  three digits)
+(Command-line editing)<br>CTRL-K {char1} {char2}  	(Command-line editing)<br>  enter digraph (See |Q_di|)
+(Command-line editing)<br>CTRL-R {register}  	(Command-line editing)<br>  insert the contents of a register
+(Command-line editing)<br>[Left]/[Right]  	(Command-line editing)<br>  cursor left/right
+(Command-line editing)<br>[S-Left]/[S-Right]  	(Command-line editing)<br>  cursor one word left/right
+(Command-line editing)<br>CTRL-B/CTRL-E  	(Command-line editing)<br>  cursor to beginning/end of command-line
+(Command-line editing)<br>[BS]  	(Command-line editing)<br>  delete the character in front of the cursor
+(Command-line editing)<br>[Del]  	(Command-line editing)<br>  delete the character under the cursor
+(Command-line editing)<br>CTRL-W  	(Command-line editing)<br>  delete the word in front of the cursor
+(Command-line editing)<br>CTRL-U  	(Command-line editing)<br>  remove all characters
+(Command-line editing)<br>[Up]/[Down]  	(Command-line editing)<br>  recall older/newer command-line that starts with current command
+(Command-line editing)<br>[S-Up]/[S-Down]  	(Command-line editing)<br>  recall older/newer command-line from history
+(Command-line editing)<br>CTRL-G  	(Command-line editing)<br>  next match when 'incsearch' is active
+(Command-line editing)<br>CTRL-T  	(Command-line editing)<br>  previous match when 'incsearch' is active
+(Command-line editing)<br>:his[tory]  	(Command-line editing)<br>  show older command-lines
+(Command-line editing)<br>CTRL-D  	(Command-line editing)<br>  list all names that match the pattern in front of the cursor
+(Command-line editing)<br>CTRL-A  	(Command-line editing)<br>  insert all names that match pattern in front of cursor
+(Command-line editing)<br>CTRL-L  	(Command-line editing)<br>  insert longest common part of names that match pattern
+(Command-line editing)<br>CTRL-N  	(Command-line editing)<br>  after 'wildchar' with multiple matches: go to next match
+(Command-line editing)<br>CTRL-P  	(Command-line editing)<br>  after 'wildchar' with multiple matches: go to previous match
+(Ex ranges)<br>,  	(Ex ranges)<br>  separates two line numbers
+(Ex ranges)<br>;  	(Ex ranges)<br>  idem, set cursor to the first line number before interpreting the second one
+(Ex ranges)<br>{number}  	(Ex ranges)<br>  an absolute line number
+(Ex ranges)<br>.  	(Ex ranges)<br>  the current line
+(Ex ranges)<br>$  	(Ex ranges)<br>  the last line in the file
+(Ex ranges)<br>%  	(Ex ranges)<br>  equal to 1,$ (the entire file)
+(Ex ranges)<br>*  	(Ex ranges)<br>  equal to '[,'] (visual area)
+(Ex ranges)<br>'t  	(Ex ranges)<br>  position of mark t
+(Ex ranges)<br>/{pattern}[/]  	(Ex ranges)<br>  the next line where {pattern} matches
+(Ex ranges)<br>?{pattern}[?]  	(Ex ranges)<br>  the previous line where {pattern} matches
+(Ex ranges)<br>+[num]  	(Ex ranges)<br>  add [num] to the preceding line number (default: 1)
+(Ex ranges)<br>-[num]  	(Ex ranges)<br>  subtract [num] from the preceding line number (default: 1)
+(Starting Vim)<br>vim [options]  	(Starting Vim)<br>  start editing with an empty buffer
+(Starting Vim)<br>vim [options] {file} ..  	(Starting Vim)<br>  start editing one or more files
+(Starting Vim)<br>vim [options] -  	(Starting Vim)<br>  read file from stdin
+(Starting Vim)<br>vim [options] -t {tag}  	(Starting Vim)<br>  edit the file associated with {tag}
+(Starting Vim)<br>vim [options] -q [fname]  	(Starting Vim)<br>  start editing in QuickFix mode, display the first error
+(Editing a file)<br>:e[dit][!] {file}  	(Editing a file)<br>  edit {file}
+(Editing a file)<br>:e[dit][!]  	(Editing a file)<br>  reload the current file
+(Editing a file)<br>:ene[w][!]  	(Editing a file)<br>  edit a new, unnamed buffer
+(Editing a file)<br>:fin[d][!] {file}  	(Editing a file)<br>  find {file} in 'path' and edit it
+(Editing a file)<br>N CTRL-^  	(Editing a file)<br>  edit alternate file N (equivalent to ":e #N")
+(Editing a file)<br>gf or ]f  	(Editing a file)<br>  edit the file whose name is under the cursor
+(Editing a file)<br>:pwd  	(Editing a file)<br>  print the current directory name
+(Editing a file)<br>:cd [path]  	(Editing a file)<br>  change the current directory to [path]
+(Editing a file)<br>:cd -  	(Editing a file)<br>  back to previous current directory
+(Editing a file)<br>:f[ile]  	(Editing a file)<br>  print the current file name and the cursor position
+(Editing a file)<br>:f[ile] {name}  	(Editing a file)<br>  set the current file name to {name}
+(Editing a file)<br>:files  	(Editing a file)<br>  show alternate file names
+(Using the argument list |argument-list|)<br>:ar[gs]  	(Using the argument list |argument-list|)<br>  print the argument list, with the current file in "[]"
+(Using the argument list |argument-list|)<br>:all or :sall  	(Using the argument list |argument-list|)<br>  open a window for every file in the arg list
+(Using the argument list |argument-list|)<br>:wn[ext][!]  	(Using the argument list |argument-list|)<br>  write file and edit next file
+(Using the argument list |argument-list|)<br>:wn[ext][!] {file}  	(Using the argument list |argument-list|)<br>  write to {file} and edit next file, unless {file} exists; With !, overwrite existing file
+(Using the argument list |argument-list|)<br>:wN[ext][!] [file]  	(Using the argument list |argument-list|)<br>  write file and edit previous file
+(Writing and quitting)<br>:[range]w[rite][!]  	(Writing and quitting)<br>  write to the current file
+(Writing and quitting)<br>:[range]w[rite] {file}  	(Writing and quitting)<br>  write to {file}, unless it already exists
+(Writing and quitting)<br>:[range]w[rite]! {file}  	(Writing and quitting)<br>  write to {file}. Overwrite an existing file
+(Writing and quitting)<br>:[range]w[rite][!] ]]  	(Writing and quitting)<br>  append to the current file
+(Writing and quitting)<br>:[range]w[rite][!] ]] {file}  	(Writing and quitting)<br>  append to {file}
+(Writing and quitting)<br>:[range]w[rite] !{cmd}  	(Writing and quitting)<br>  execute {cmd} with [range] lines as standard input
+(Writing and quitting)<br>:[range]up[date][!]  	(Writing and quitting)<br>  write to current file if modified
+(Writing and quitting)<br>:wa[ll][!]  	(Writing and quitting)<br>  write all changed buffers
+(Writing and quitting)<br>:q[uit]  	(Writing and quitting)<br>  quit current buffer, unless changes have been made; Exit Vim when there are no other non-help buffers
+(Writing and quitting)<br>:q[uit]!  	(Writing and quitting)<br>  quit current buffer always, discard any changes. Exit Vim when there are no other non-help buffers
+(Writing and quitting)<br>:qa[ll]  	(Writing and quitting)<br>  exit Vim, unless changes have been made
+(Writing and quitting)<br>:qa[ll]!  	(Writing and quitting)<br>  exit Vim always, discard any changes
+(Writing and quitting)<br>:cq  	(Writing and quitting)<br>  quit without writing and return error code
+(Writing and quitting)<br>:wq[!]  	(Writing and quitting)<br>  write the current file and exit
+(Writing and quitting)<br>:wq[!] {file}  	(Writing and quitting)<br>  write to {file} and exit
+(Writing and quitting)<br>:x[it][!] [file]  	(Writing and quitting)<br>  like ":wq" but write only when changes have been made
+(Writing and quitting)<br>ZZ  	(Writing and quitting)<br>  same as ":x"
+(Writing and quitting)<br>ZQ  	(Writing and quitting)<br>  same as ":q!"
+(Writing and quitting)<br>:xa[ll][!] or :wqall[!]  	(Writing and quitting)<br>  write all changed buffers and exit
+(Writing and quitting)<br>:st[op][!]  	(Writing and quitting)<br>  suspend Vim or start new shell; if 'aw' option is set and [!] not given write the buffer
+(Writing and quitting)<br>CTRL-Z  	(Writing and quitting)<br>  same as ":stop"
+(Multi-window commands)<br>CTRL-W s or :split  	(Multi-window commands)<br>  split window into two parts
+(Multi-window commands)<br>:split {file}  	(Multi-window commands)<br>  split window and edit {file} in one of them
+(Multi-window commands)<br>:vsplit {file}  	(Multi-window commands)<br>  same, but split vertically
+(Multi-window commands)<br>:vertical {cmd}  	(Multi-window commands)<br>  make {cmd} split vertically
+(Multi-window commands)<br>:sf[ind] {file}  	(Multi-window commands)<br>  split window, find {file} in 'path' and edit it
+(Multi-window commands)<br>:terminal {cmd}  	(Multi-window commands)<br>  open a terminal window
+(Multi-window commands)<br>CTRL-W ]  	(Multi-window commands)<br>  split window and jump to tag under cursor
+(Multi-window commands)<br>CTRL-W f  	(Multi-window commands)<br>  split window and edit file name under the cursor
+(Multi-window commands)<br>CTRL-W ^  	(Multi-window commands)<br>  split window and edit alternate file
+(Multi-window commands)<br>CTRL-W n or :new  	(Multi-window commands)<br>  create new empty window
+(Multi-window commands)<br>CTRL-W q or :q[uit]  	(Multi-window commands)<br>  quit editing and close window
+(Multi-window commands)<br>CTRL-W c or :clo[se]  	(Multi-window commands)<br>  make buffer hidden and close window
+(Multi-window commands)<br>CTRL-W o or :on[ly]  	(Multi-window commands)<br>  make current window only one on the screen
+(Multi-window commands)<br>CTRL-W j  	(Multi-window commands)<br>  move cursor to window below
+(Multi-window commands)<br>CTRL-W k  	(Multi-window commands)<br>  move cursor to window above
+(Multi-window commands)<br>CTRL-W CTRL-W  	(Multi-window commands)<br>  move cursor to window below (wrap)
+(Multi-window commands)<br>CTRL-W W  	(Multi-window commands)<br>  move cursor to window above (wrap)
+(Multi-window commands)<br>CTRL-W t  	(Multi-window commands)<br>  move cursor to top window
+(Multi-window commands)<br>CTRL-W b  	(Multi-window commands)<br>  move cursor to bottom window
+(Multi-window commands)<br>CTRL-W p  	(Multi-window commands)<br>  move cursor to previous active window
+(Multi-window commands)<br>CTRL-W r  	(Multi-window commands)<br>  rotate windows downwards
+(Multi-window commands)<br>CTRL-W R  	(Multi-window commands)<br>  rotate windows upwards
+(Multi-window commands)<br>CTRL-W x  	(Multi-window commands)<br>  exchange current window with next one
+(Multi-window commands)<br>CTRL-W =  	(Multi-window commands)<br>  make all windows equal height & width
+(Multi-window commands)<br>CTRL-W -  	(Multi-window commands)<br>  decrease current window height
+(Multi-window commands)<br>CTRL-W +  	(Multi-window commands)<br>  increase current window height
+(Multi-window commands)<br>CTRL-W _  	(Multi-window commands)<br>  set current window height (default: very high)
+(Multi-window commands)<br>CTRL-W [  	(Multi-window commands)<br>  decrease current window width
+(Multi-window commands)<br>CTRL-W ]  	(Multi-window commands)<br>  increase current window width
+(Multi-window commands)<br>CTRL-W |  	(Multi-window commands)<br>  set current window width (default: widest possible)
+(Buffer list commands)<br>:buffers or :files  	(Buffer list commands)<br>  list all known buffer and file names
+(Buffer list commands)<br>:ball  	(Buffer list commands)<br>  or :sball edit all args/buffers
+(Buffer list commands)<br>:unhide or :sunhide  	(Buffer list commands)<br>  edit all loaded buffers
+(Buffer list commands)<br>:badd {fname}  	(Buffer list commands)<br>  add file name {fname} to the list
+(Buffer list commands)<br>:bunload[!] [N]  	(Buffer list commands)<br>  unload buffer [N] from memory
+(Buffer list commands)<br>:bdelete[!] [N]  	(Buffer list commands)<br>  unload buffer [N] and delete it from the buffer list
+(Syntax Highlighting)<br>:syntax on  	(Syntax Highlighting)<br>  start using syntax highlighting
+(Syntax Highlighting)<br>:syntax off  	(Syntax Highlighting)<br>  stop using syntax highlighting
+(Syntax Highlighting)<br>:syntax keyword {group-name} {keyword} ..  	(Syntax Highlighting)<br>  add a syntax keyword item
+(Syntax Highlighting)<br>:syntax match {group-name} {pattern} ...  	(Syntax Highlighting)<br>  add syntax match item
+(Syntax Highlighting)<br>:syntax region {group-name} {pattern} ...  	(Syntax Highlighting)<br>  add syntax region item
+(Syntax Highlighting)<br>:syntax sync [ccomment | lines {N} | ...]  	(Syntax Highlighting)<br>  tell syntax how to sync
+(Syntax Highlighting)<br>:syntax [list]  	(Syntax Highlighting)<br>  list current syntax items
+(Syntax Highlighting)<br>:syntax clear  	(Syntax Highlighting)<br>  clear all syntax info
+(Syntax Highlighting)<br>:highlight clear  	(Syntax Highlighting)<br>  clear all highlight info
+(Syntax Highlighting)<br>:highlight {group-name} {key}={arg} ..  	(Syntax Highlighting)<br>  set highlighting for {group-name}
+(Syntax Highlighting)<br>:filetype on  	(Syntax Highlighting)<br>  switch on file type detection, without syntax highlighting
+(Syntax Highlighting)<br>:filetype plugin indent on  	(Syntax Highlighting)<br>  switch on file type detection, with automatic indenting and settings
+(GUI commands)<br>:gui  	(GUI commands)<br>  UNIX: start the GUI
+(GUI commands)<br>:gui {fname} ..  	(GUI commands)<br>  idem, and edit {fname} ..
+(GUI commands)<br>:menu  	(GUI commands)<br>  list all menus
+(GUI commands)<br>:menu {mpath}  	(GUI commands)<br>  list menus starting with {mpath}
+(GUI commands)<br>:menu {mpath} {rhs}  	(GUI commands)<br>  add menu {mpath}, giving {rhs}
+(GUI commands)<br>:menu {pri} {mpath} {rhs}  	(GUI commands)<br>  idem, with priorities {pri}
+(GUI commands)<br>:menu ToolBar.{name} {rhs}  	(GUI commands)<br>  add toolbar item, giving {rhs}
+(GUI commands)<br>:tmenu {mpath} {text}  	(GUI commands)<br>  add tooltip to menu {mpath}
+(GUI commands)<br>:unmenu {mpath}  	(GUI commands)<br>  remove menu {mpath}
+(Folding)<br>zf{motion}  	(Folding)<br>  operator: Define a fold manually
+(Folding)<br>:{range}fold  	(Folding)<br>  define a fold for {range} lines
+(Folding)<br>zd  	(Folding)<br>  delete one fold under the cursor
+(Folding)<br>zD  	(Folding)<br>  delete all folds under the cursor
+(Folding)<br>zo  	(Folding)<br>  open one fold under the cursor
+(Folding)<br>zO  	(Folding)<br>  open all folds under the cursor
+(Folding)<br>zc  	(Folding)<br>  close one fold under the cursor
+(Folding)<br>zC  	(Folding)<br>  close all folds under the cursor
+(Folding)<br>zm  	(Folding)<br>  fold more: decrease 'foldlevel'
+(Folding)<br>zM  	(Folding)<br>  close all folds: make 'foldlevel' zero
+(Folding)<br>zr  	(Folding)<br>  reduce folding: increase 'foldlevel'
+(Folding)<br>zR  	(Folding)<br>  open all folds: make 'foldlevel' max.
+(Folding)<br>zn  	(Folding)<br>  fold none: reset 'foldenable'
+(Folding)<br>zN  	(Folding)<br>  fold normal set 'foldenable'
+(Folding)<br>zi  	(Folding)<br>  invert 'foldenable'
